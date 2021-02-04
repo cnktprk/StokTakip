@@ -53,7 +53,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <asp:Button ID="UrunEkle" runat="server" CssClass="btn btn-success btn-lg float-right" Text="Ürün Ekle"/>
+                                                    <asp:Button ID="UrunEkle" runat="server" CssClass="btn btn-success btn-lg float-right" Text="Ürün Ekle" OnClick="UrunEkle_Click" />
                                                 </div>
                                             </div>
                                         </div>

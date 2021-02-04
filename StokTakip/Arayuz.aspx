@@ -37,7 +37,7 @@
                     <!-- /.col -->
                     <div class="col-12 col-sm-6 col-md-3">
                         <div class="info-box mb-3">
-                            <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-chevron-down"></i></span>
+                            <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-chevron-down" style="color:white;"></i></span>
 
                             <div class="info-box-content">
                                 <span class="info-box-text">Azalan Ürün</span>
@@ -79,6 +79,52 @@
                     </div>
                     <!-- /.col -->
                 </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title font-weight-bold">EN FAZLA BULUNAN ÜRÜNLER</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <table id="stokTbl" class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Barkod No</th>
+                                            <th>Ürün Markası</th>
+                                            <th>Ürün Adı</th>
+                                            <th>Ürün Fiyatı</th>
+                                            <th>Stok Adedi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <asp:Repeater ID="ArayuzRepeater" runat="server">
+                                            <ItemTemplate>
+                                                <tr>
+                                                    <td><%# Eval("barkodNo") %></td>
+                                                    <td><%# Eval("urunMarka") %></td>
+                                                    <td><%# Eval("urunAdi") %></td>
+                                                    <td><%# string.Format("{0:C2}", Eval("urunFiyat")) %></td>
+                                                    <td><%# Eval("stokAdet") %></td>
+                                                </tr>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
         </section>
     </div>
 </asp:Content>

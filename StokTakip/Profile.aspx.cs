@@ -24,6 +24,7 @@ namespace StokTakip
             baglanti.Open();
             komut.ExecuteNonQuery();
             baglanti.Close();
+            Response.Redirect("Arayuz.aspx");
         }
     }
 }

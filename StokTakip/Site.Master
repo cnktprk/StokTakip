@@ -47,7 +47,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="Logout.aspx" class="nav-link">
-                            <i class="nav-icon fas fa-sign-out-alt">Çıkış Yap
+                            <i class="nav-icon fas fa-sign-out-alt"> Çıkış Yap
                             </i>
                         </a>
                     </li>
@@ -67,32 +67,28 @@
                             <li class="nav-item">
                                 <a href="Profile.aspx" class="nav-link">
                                     <i class="nav-icon fas fa-user"></i>
-                                    <p>
-                                        Profil
+                                    <p>Profil
                                     </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="Arayuz.aspx" class="nav-link">
                                     <i class="nav-icon fas fa-chart-line"></i>
-                                    <p>
-                                        Arayüz
+                                    <p>Arayüz
                                     </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="Stoklistesi.aspx" class="nav-link">
                                     <i class="nav-icon fas fa-list-ul"></i>
-                                    <p>
-                                        Stok Listesi
+                                    <p>Stok Listesi
                                     </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="Stokekle.aspx" class="nav-link">
                                     <i class="nav-icon fas fa-edit"></i>
-                                    <p>
-                                        Stok Ekle
+                                    <p>Stok Ekle
                                     </p>
                                 </a>
                             </li>

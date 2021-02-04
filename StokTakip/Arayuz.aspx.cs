@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,7 +12,15 @@ namespace StokTakip
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            SqlConnection baglanti = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; initial catalog = StokVeriTabani; integrated security = true;");
+            SqlCommand komut = new SqlCommand("SELECT TOP 10 * FROM StokListesi ORDER BY stokAdet DESC;", baglanti);
+            SqlDataReader reader;
+            baglanti.Open();
+            reader = komut.ExecuteReader();
+            ArayuzRepeater.DataSource = reader;
+            ArayuzRepeater.DataBind();
+            reader.Close();
+            baglanti.Close();
         }
     }
 }
