@@ -55,10 +55,8 @@
             </nav>
 
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
-                <a href="arayuz.html" class="brand-link">
-                    <img src="Content/mySettings/img/Logo.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                    <span class="brand-text font-weight-light">Niz Stok Takip
-                    </span>
+                <a href="Arayuz.aspx" class="brand-link">
+                    <img src="Content/mySettings/img/NLogo.png" alt="NizStokTakip" class="brand-image " style="opacity: .8">
                 </a>
                 <!-- Sidebar -->
                 <div class="sidebar">
@@ -87,8 +85,22 @@
                             </li>
                             <li class="nav-item">
                                 <a href="Stokekle.aspx" class="nav-link">
-                                    <i class="nav-icon fas fa-edit"></i>
+                                    <i class="nav-icon fas fa-plus-circle"></i>
                                     <p>Stok Ekle
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Stokguncelle.aspx" class="nav-link">
+                                    <i class="nav-icon fas fa-edit"></i>
+                                    <p>Stok Güncelle
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Stoksil.aspx" class="nav-link">
+                                    <i class="nav-icon fas fa-trash"></i>
+                                    <p>Stok Sil
                                     </p>
                                 </a>
                             </li>

@@ -11,7 +11,7 @@ namespace StokTakip
 {
 
 
-    public partial class Stoklistesi
+    public partial class Stoksil
     {
 
         /// <summary>
@@ -49,5 +49,23 @@ namespace StokTakip
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource;
+
+        /// <summary>
+        /// gunUrunBarkod control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox gunUrunBarkod;
+
+        /// <summary>
+        /// UrunSil control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button UrunSil;
     }
 }
