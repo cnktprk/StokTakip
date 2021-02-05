@@ -20,6 +20,9 @@ namespace StokTakip
             ArayuzRepeater.DataSource = reader;
             ArayuzRepeater.DataBind();
             reader.Close();
+            SqlCommand azalanUrun = new SqlCommand("SELECT COUNT(*) FROM StokListesi WHERE stokAdet <= 50", baglanti);
+            AzalanUrun.Text = azalanUrun.ExecuteScalar().ToString();
+
             SqlCommand tUrun = new SqlCommand("SELECT SUM(stokAdet) AS toplamStok FROM StokListesi", baglanti);
             SqlDataReader tUrunReader = tUrun.ExecuteReader();
             tUrunReader.Read();

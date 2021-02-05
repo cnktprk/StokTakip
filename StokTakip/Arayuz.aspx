@@ -34,8 +34,9 @@
                         <div class="info-box mb-3">
                             <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-chevron-down" style="color: white;"></i></span>
                             <div class="info-box-content">
-                                <span class="info-box-text">Azalan Ürün</span>
-                                <span class="info-box-number">0</span>
+                                <span class="info-box-text">Azalan Ürün Sayısı</span>
+                                <span class="info-box-number">
+                                    <asp:Label ID="AzalanUrun" runat="server" Text=""></asp:Label></span>
                             </div>
                         </div>
                     </div>
