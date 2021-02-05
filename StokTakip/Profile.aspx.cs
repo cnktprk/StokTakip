@@ -12,13 +12,21 @@ namespace StokTakip
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            SqlConnection baglanti = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; initial catalog = StokVeriTabani; integrated security = true;");
+            SqlCommand komut = new SqlCommand("SELECT * FROM Kullanicilar WHERE id = \'" + Session["kullaniciId"].ToString() + "\'", baglanti);
+            baglanti.Open();
+            SqlDataReader reader = komut.ExecuteReader();
+            reader.Read();
+            Adi.Text = reader["kullanici_adi"].ToString();
+            Rol.Text = reader["kullanici_rol"].ToString();
+            Yetki.Text = reader["kullanici_yetki"].ToString();
+            baglanti.Close();
         }
 
         protected void Guncelle_Click(object sender, EventArgs e)
         {
             SqlConnection baglanti = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; initial catalog = StokVeriTabani; integrated security = true;");
-            SqlCommand komut = new SqlCommand("UPDATE Kullanicilar set kullanici_sifre=@sifre WHERE id=@id", baglanti);
+            SqlCommand komut = new SqlCommand("UPDATE Kullanicilar SET kullanici_sifre=@sifre WHERE id = @id", baglanti);
             komut.Parameters.AddWithValue("@sifre", yeniSifreTbx.Text);
             komut.Parameters.AddWithValue("@id", Session["kullaniciId"]);
             baglanti.Open();

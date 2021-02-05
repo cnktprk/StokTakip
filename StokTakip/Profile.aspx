@@ -35,13 +35,24 @@
                                     <img class="profile-user-img img-fluid img-circle"
                                         src="Content/mySettings/img/user1-128x128.jpg">
                                 </div>
-                                <h3 class="profile-username text-center">Nizamettin Şimşek</h3>
-                                <ul class="list-group list-group-unbordered mb-3">
+                                <ul class="list-group list-group-unbordered mt-3 mb-2">
                                     <li class="list-group-item">
-                                        <b>Pozisyon</b> <p class="float-right">Stok Takip Sorumlusu</p>
+                                        <b>Kullanıcı Adı</b>
+                                        <p class="float-right">
+                                            <asp:Label ID="Adi" runat="server" Text=""></asp:Label>
+                                        </p>
                                     </li>
                                     <li class="list-group-item">
-                                        <b>Yetkiler</b> <p class="float-right">Stok Takibi</p>
+                                        <b>Pozisyon</b>
+                                        <p class="float-right">
+                                            <asp:Label ID="Rol" runat="server" Text=""></asp:Label>
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <b>Yetkiler</b>
+                                        <p class="float-right">
+                                            <asp:Label ID="Yetki" runat="server" Text=""></asp:Label>
+                                        </p>
                                     </li>
                                 </ul>
                             </div>
@@ -62,7 +73,7 @@
                                             <div class="card-body">
                                                 <div class="form-group">
                                                     <label for="gnclSifreTbx">Güncel Şifre</label>
-                                                    <asp:TextBox ID="gnclSifreTbx"  runat="server" CssClass="form-control"></asp:TextBox>
+                                                    <asp:TextBox ID="gnclSifreTbx" runat="server" CssClass="form-control"></asp:TextBox>
                                                     <span class="form-text small text-muted">Şifrenizi giriniz.
                                                     </span>
                                                 </div>
