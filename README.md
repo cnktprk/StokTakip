@@ -8,7 +8,7 @@
 ## Projeyi İndirmek İçin
 
 #### 1.Masaüstünde terminal aç ve bu komutu gir
-```bash
+```git
 $ git clone https://github.com/nizsimsek/StokTakip.git
 ```
 
