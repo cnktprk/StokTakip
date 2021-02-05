@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Stoklistesi.aspx.cs" Inherits="StokTakip.Stoklistesi" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Stoklistesi.aspx.cs" Inherits="StokTakip.Stoklistesi" EnableEventValidation="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <!-- Content Wrapper. Contains page content -->
@@ -40,6 +40,7 @@
                                             <th>Ürün Adı</th>
                                             <th>Ürün Fiyatı</th>
                                             <th>Stok Adedi</th>
+                                            <th>İşlem</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -51,6 +52,10 @@
                                                     <td><%# Eval("urunAdi") %></td>
                                                     <td><%# string.Format("{0:C2}", Eval("urunFiyat")) %></td>
                                                     <td><%# Eval("stokAdet") %></td>
+                                                    <td style="text-align:center;">
+                                                        <asp:Button ID="UrunGuncelle" runat="server" Text="Güncelle" OnClick="UrunGuncelle_Click" CssClass="btn btn-success mr-2" />
+                                                        <asp:Button ID="UrunSil" runat="server" Text="Sil" OnClick="UrunSil_Click" CssClass="btn btn-danger ml-2" />
+                                                    </td>
                                                 </tr>
                                             </ItemTemplate>
                                         </asp:Repeater>

@@ -22,5 +22,25 @@ namespace StokTakip
             reader.Close();
             baglanti.Close();
         }
+
+        protected void UrunSil_Click(object sender, EventArgs e)
+        {
+            SqlConnection baglanti = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; initial catalog = StokVeriTabani; integrated security = true;");
+            SqlCommand komut = new SqlCommand("DELETE FROM StokListesi WHERE barkodNo = @barkodNo", baglanti);
+            baglanti.Open();
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            Response.Redirect("Stoklistesi.aspx");
+        }
+
+        protected void UrunGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlConnection baglanti = new SqlConnection(@"Data Source = (localdb)\MSSQLLocalDB; initial catalog = StokVeriTabani; integrated security = true;");
+            SqlCommand komut = new SqlCommand("DELETE FROM StokListesi WHERE barkodNo = @barkodNo", baglanti);
+            baglanti.Open();
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            Response.Redirect("Stoklistesi.aspx");
+        }
     }
 }
