@@ -37,7 +37,7 @@
                     <!-- /.col -->
                     <div class="col-12 col-sm-6 col-md-3">
                         <div class="info-box mb-3">
-                            <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-chevron-down" style="color:white;"></i></span>
+                            <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-chevron-down" style="color: white;"></i></span>
 
                             <div class="info-box-content">
                                 <span class="info-box-text">Azalan Ürün</span>
@@ -87,7 +87,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title font-weight-bold">EN FAZLA BULUNAN ÜRÜNLER</h3>
+                                <h3 class="mb-0">En Fazla Bulunan Ürünler</h3>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">

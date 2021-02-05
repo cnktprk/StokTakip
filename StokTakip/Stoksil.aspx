@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Stoklistesi.aspx.cs" Inherits="StokTakip.Stoklistesi" EnableEventValidation="false" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Stoksil.aspx.cs" Inherits="StokTakip.Stoksil" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content">
@@ -6,12 +6,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Stok Listesi</h1>
+                        <h1 class="m-0">Stok Sil</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="Arayuz.aspx">Anasayfa</a></li>
-                            <li class="breadcrumb-item active">Stok Listesi</li>
+                            <li class="breadcrumb-item active">Stok Sil</li>
                         </ol>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                                     <div class="active tab-pane" id="activity">
                                         <div class="post">
                                             <div class="card-header">
-                                                <h3 class="mb-0">Stok Listesi</h3>
+                                                <h3 class="mb-0">Ürün Ara</h3>
                                             </div>
                                             <div class="card-body">
                                                 <div class="row">
@@ -46,7 +46,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-12 pl-4">
+                                                <div class="col-12 ml-1 pl-4 pr-2">
                                                     <div class="form-group">
                                                         <asp:GridView ID="BulGrid" runat="server" CssClass="table table-bordered table-hover" AutoGenerateColumns="False">
                                                             <Columns>
@@ -71,6 +71,25 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card-header">
+                                    <h3 class="mb-0">Ürün Sil</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="form-group">
+                                                <asp:TextBox ID="gunUrunBarkod" runat="server" CssClass="form-control"></asp:TextBox>
+                                                <span class="form-text small text-muted">Ürün Barkodu ile silme işlemi yapınız.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="form-group">
+                                                <asp:Button ID="UrunSil" runat="server" CssClass="btn btn-success btn-md" Text="Ürün Sil" OnClick="UrunSil_Click" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -79,5 +98,3 @@
         </section>
     </div>
 </asp:Content>
-
-

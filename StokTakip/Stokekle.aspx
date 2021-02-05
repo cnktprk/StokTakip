@@ -6,12 +6,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Stok Ekle</h1>
+                        <h1 class="m-0">Stok Güncelle</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="Arayuz.aspx">Anasayfa</a></li>
-                            <li class="breadcrumb-item active">Stok Ekle</li>
+                            <li class="breadcrumb-item active">Stok Güncelle</li>
                         </ol>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <asp:Button ID="UrunEkle" runat="server" CssClass="btn btn-success btn-lg float-right" Text="Ürün Ekle" OnClick="UrunEkle_Click" />
+                                                    <asp:Button ID="UrunEkle" runat="server" CssClass="btn btn-success btn-md float-right" Text="Ürün Ekle" OnClick="UrunEkle_Click" />
                                                 </div>
                                             </div>
                                         </div>
