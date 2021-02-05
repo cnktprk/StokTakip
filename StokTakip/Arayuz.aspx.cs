@@ -24,10 +24,8 @@ namespace StokTakip
             AzalanUrun.Text = azalanUrun.ExecuteScalar().ToString();
 
             SqlCommand tUrun = new SqlCommand("SELECT SUM(stokAdet) AS toplamStok FROM StokListesi", baglanti);
-            SqlDataReader tUrunReader = tUrun.ExecuteReader();
-            tUrunReader.Read();
-            ToplamUrun.Text = tUrunReader["toplamStok"].ToString();
-            KalanUrun.Text = tUrunReader["toplamStok"].ToString();
+            ToplamUrun.Text = tUrun.ExecuteScalar().ToString();
+            KalanUrun.Text = tUrun.ExecuteScalar().ToString();
             baglanti.Close();
         }
     }

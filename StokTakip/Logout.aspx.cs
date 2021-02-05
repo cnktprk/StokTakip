@@ -12,7 +12,7 @@ namespace StokTakip
         protected void Page_Load(object sender, EventArgs e)
         {
             Session.RemoveAll();
-            Response.Redirect("Login.aspx");
+            Response.Redirect("Default.aspx");
         }
     }
 }
