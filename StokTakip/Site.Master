@@ -47,7 +47,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="Logout.aspx" class="nav-link">
-                            <i class="nav-icon fas fa-sign-out-alt"> Çıkış Yap
+                            <i class="nav-icon fas fa-sign-out-alt">Çıkış Yap
                             </i>
                         </a>
                     </li>
@@ -58,49 +58,54 @@
                 <a href="Arayuz.aspx" class="brand-link">
                     <img src="Content/mySettings/img/NLogo.png" alt="NizStokTakip" class="brand-image " style="opacity: .8">
                 </a>
-                <!-- Sidebar -->
                 <div class="sidebar">
                     <nav class="mt-2">
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                             <li class="nav-item">
                                 <a href="Profile.aspx" class="nav-link">
                                     <i class="nav-icon fas fa-user"></i>
-                                    <p>Profil
+                                    <p>
+                                        Profil
                                     </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="Arayuz.aspx" class="nav-link">
                                     <i class="nav-icon fas fa-chart-line"></i>
-                                    <p>Arayüz
+                                    <p>
+                                        Arayüz
                                     </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="Stoklistesi.aspx" class="nav-link">
                                     <i class="nav-icon fas fa-list-ul"></i>
-                                    <p>Stok Listesi
+                                    <p>
+                                        Stok Listesi
                                     </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="Stokekle.aspx" class="nav-link">
                                     <i class="nav-icon fas fa-plus-circle"></i>
-                                    <p>Stok Ekle
+                                    <p>
+                                        Stok Ekle
                                     </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="Stokguncelle.aspx" class="nav-link">
                                     <i class="nav-icon fas fa-edit"></i>
-                                    <p>Stok Güncelle
+                                    <p>
+                                        Stok Güncelle
                                     </p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="Stoksil.aspx" class="nav-link">
                                     <i class="nav-icon fas fa-trash"></i>
-                                    <p>Stok Sil
+                                    <p>
+                                        Stok Sil
                                     </p>
                                 </a>
                             </li>
@@ -108,7 +113,6 @@
                     </nav>
                 </div>
             </aside>
-
             <div class="content-wrapper">
                 <div class="content-header">
                     <div class="container-fluid">

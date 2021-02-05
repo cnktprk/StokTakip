@@ -17,67 +17,47 @@
                 </div>
             </div>
         </div>
-
         <section class="content">
             <div class="container-fluid">
-                <!-- Info boxes -->
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-3">
                         <div class="info-box">
                             <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
-
                             <div class="info-box-content">
                                 <span class="info-box-text">Toplam Ürün</span>
-                                <span class="info-box-number">4,000</span>
+                                <span class="info-box-number">
+                                    <asp:Label ID="ToplamUrun" runat="server" Text=""></asp:Label></span>
                             </div>
-                            <!-- /.info-box-content -->
                         </div>
-                        <!-- /.info-box -->
                     </div>
-                    <!-- /.col -->
                     <div class="col-12 col-sm-6 col-md-3">
                         <div class="info-box mb-3">
                             <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-chevron-down" style="color: white;"></i></span>
-
                             <div class="info-box-content">
                                 <span class="info-box-text">Azalan Ürün</span>
-                                <span class="info-box-number">1,000</span>
+                                <span class="info-box-number">0</span>
                             </div>
-                            <!-- /.info-box-content -->
                         </div>
-                        <!-- /.info-box -->
                     </div>
-                    <!-- /.col -->
-
-                    <!-- fix for small devices only -->
-                    <div class="clearfix hidden-md-up"></div>
-
                     <div class="col-12 col-sm-6 col-md-3">
                         <div class="info-box mb-3">
                             <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-times-circle"></i></span>
-
                             <div class="info-box-content">
                                 <span class="info-box-text">Tükenen Ürün</span>
-                                <span class="info-box-number">1,000</span>
+                                <span class="info-box-number">0</span>
                             </div>
-                            <!-- /.info-box-content -->
                         </div>
-                        <!-- /.info-box -->
                     </div>
-                    <!-- /.col -->
                     <div class="col-12 col-sm-6 col-md-3">
                         <div class="info-box mb-3">
                             <span class="info-box-icon bg-info elevation-1"><i class="fas fa-layer-group"></i></span>
-
                             <div class="info-box-content">
                                 <span class="info-box-text">Kalan Ürün</span>
-                                <span class="info-box-number">2,000</span>
+                                <span class="info-box-number">
+                                    <asp:Label ID="KalanUrun" runat="server" Text=""></asp:Label></span>
                             </div>
-                            <!-- /.info-box-content -->
                         </div>
-                        <!-- /.info-box -->
                     </div>
-                    <!-- /.col -->
                 </div>
             </div>
         </section>
@@ -89,7 +69,6 @@
                             <div class="card-header">
                                 <h3 class="mb-0">En Fazla Bulunan Ürünler</h3>
                             </div>
-                            <!-- /.card-header -->
                             <div class="card-body">
                                 <table id="stokTbl" class="table table-bordered table-hover">
                                     <thead>
@@ -116,15 +95,10 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <!-- /.card-body -->
                         </div>
-                        <!-- /.card -->
                     </div>
-                    <!-- /.col -->
                 </div>
-                <!-- /.row -->
             </div>
-            <!-- /.container-fluid -->
         </section>
     </div>
 </asp:Content>

@@ -1,10 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Profile.aspx.cs" Inherits="StokTakip.Profile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-    <!-- Content Wrapper. Contains page content -->
     <div class="content">
-        <!-- Content Header (Page header) -->
         <section class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
@@ -19,17 +16,12 @@
                     </div>
                 </div>
             </div>
-            <!-- /.container-fluid -->
         </section>
-
-        <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4">
-
-                        <!-- Profile Image -->
-                        <div class="card card-primary card-outline">
+                        <div class="card card-primary">
                             <div class="card-body box-profile">
                                 <div class="text-center">
                                     <img class="profile-user-img img-fluid img-circle"
@@ -64,9 +56,6 @@
                                 <div class="tab-content">
                                     <div class="active tab-pane" id="activity">
                                         <div class="post">
-
-                                            <!-- form card change password -->
-
                                             <div class="card-header">
                                                 <h3 class="mb-0">Şifre Güncelle</h3>
                                             </div>
